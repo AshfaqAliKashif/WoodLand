@@ -23,9 +23,9 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 SECRET_KEY = 'django-insecure-+p#sc)8hq9&y0*9@!8v_^76n^qds#tn25py+oro3tpj8y9v-xt'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -82,20 +82,20 @@ WSGI_APPLICATION = 'WoodLand.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-            'ENGINE': 'mssql',
-            'NAME': 'woodland',
-            'USER': 'ashfaq',
-            'PASSWORD': 'Mcse2008',
-            'HOST': 'ASHFAQ-DPO\SQLEXPRESS',
-            'PORT': '',
+# DATABASES = {
+#     'default': {
+#             'ENGINE': 'mssql',
+#             'NAME': 'woodland',
+#             'USER': 'ashfaq',
+#             'PASSWORD': 'Mcse2008',
+#             'HOST': 'ASHFAQ-DPO\SQLEXPRESS',
+#             'PORT': '',
 
-            'OPTIONS': {
-                'driver': 'ODBC Driver 17 for SQL Server',
-            },
-        },
-}
+#             'OPTIONS': {
+#                 'driver': 'ODBC Driver 17 for SQL Server',
+#             },
+#         },
+# }
  # set this to False if you want to turn off pyodbc's connection pooling
 DATABASE_CONNECTION_POOLING = False
 # Password validation
