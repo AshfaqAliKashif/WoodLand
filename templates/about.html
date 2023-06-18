@@ -12,8 +12,8 @@
                 <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center text-uppercase">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                        {% comment %} <li class="breadcrumb-item"><a href="#">Pages</a></li> {% endcomment %}
                         <li class="breadcrumb-item text-white active" aria-current="page">About</li>
                     </ol>
                 </nav>
@@ -32,7 +32,8 @@
                         <i class="fa fa-certificate fa-3x text-primary flex-shrink-0"></i>
                         <div class="ps-4">
                             <h5 class="mb-3">Quality Servicing</h5>
-                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                            <p>Providing top-quality servicing with precision and expertise for your vehicle's maintenance and repair needs.
+                            </p>
                             <a class="text-secondary border-bottom" href="">Read More</a>
                         </div>
                     </div>
@@ -42,7 +43,7 @@
                         <i class="fa fa-users-cog fa-3x text-primary flex-shrink-0"></i>
                         <div class="ps-4">
                             <h5 class="mb-3">Expert Workers</h5>
-                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                            <p>Count on our team of expert workers for professional and skilled service, delivering exceptional results for all your automotive needs.</p>
                             <a class="text-secondary border-bottom" href="">Read More</a>
                         </div>
                     </div>
@@ -52,7 +53,7 @@
                         <i class="fa fa-tools fa-3x text-primary flex-shrink-0"></i>
                         <div class="ps-4">
                             <h5 class="mb-3">Modern Equipment</h5>
-                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                            <p>Equipped with state-of-the-art tools and technology, we utilize modern equipment to provide efficient and precise service for all your automotive requirements.</p>
                             <a class="text-secondary border-bottom" href="">Read More</a>
                         </div>
                     </div>
@@ -71,15 +72,19 @@
                     <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
                         <img class="position-absolute img-fluid w-100 h-100" src="{% static 'img/about.jpg'%}" style="object-fit: cover;" alt="">
                         <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5" style="background: rgba(0, 0, 0, .08);">
-                            <h1 class="display-4 text-white mb-0">15 <span class="fs-4">Years</span></h1>
+                            <h1 class="display-4 text-white mb-0">30 <span class="fs-4">Years</span></h1>
                             <h4 class="text-white">Experience</h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <h6 class="text-primary text-uppercase">// About Us //</h6>
-                    <h1 class="mb-4"><span class="text-primary">CarServ</span> Is The Best Place For Your Auto Care</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <h1 class="mb-4"><span class="text-primary">WoodLand Tires & Wheels</span> Is The Best Place For Your Auto Care</h1>
+                    <p class="mb-4">Welcome to Woodland Tires and Wheels, your premier destination for all things related to tires and wheels. We are a trusted and reputable provider of high-quality automotive products and services, dedicated to exceeding our customers' expectations.
+
+                        At Woodland Tires and Wheels, we understand the importance of having the right tires and wheels for your vehicle. That's why we offer an extensive selection of top brands and styles to suit a wide range of preferences and needs. Whether you're looking for performance tires for a thrilling driving experience, all-season tires for versatile performance, or off-road tires for your adventurous journeys, we have you covered.
+                        
+                        Our knowledgeable and friendly staff is committed to providing personalized assistance to help you make the perfect choice. We take the time to understand your specific requirements and guide you towards the best options that fit your vehicle and driving preferences.</p>
                     <div class="row g-4 mb-3 pb-3">
                         <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
                             <div class="d-flex">
@@ -164,7 +169,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="{% static 'img/team-1.jpg'%}" alt="">
+                            <img class="img-fluid" src="{% static 'img/team-3.jpg'%}" alt="">
                             <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -180,7 +185,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="{% static 'img/team-2.jpg'%}" alt="">
+                            <img class="img-fluid" src="{% static 'img/team-3.jpg'%}" alt="">
                             <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -212,7 +217,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="{% static 'img/team-4.jpg'%}" alt="">
+                            <img class="img-fluid" src="{% static 'img/team-3.jpg'%}" alt="">
                             <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
