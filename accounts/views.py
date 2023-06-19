@@ -15,3 +15,5 @@ def booking(request):
     return render(request, 'booking.html')
 def testimonial(request):
     return render(request, 'testimonial.html')
+def financing(request):
+    return render(request, 'financing.html')
