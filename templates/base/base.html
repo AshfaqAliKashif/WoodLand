@@ -67,8 +67,8 @@
             <div class="h-100 d-inline-flex align-items-center">
                 <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.facebook.com/profile.php?id=100065157355058" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-sm-square bg-white text-primary me-1" href="https://wa.me/15304021994" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a class="btn btn-sm-square bg-white text-primary me-1" href="{% static '#'"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-sm-square bg-white text-primary me-1" href="{% static '"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-sm-square bg-white text-primary me-0" href="https://www.instagram.com/woodlandtireswheels" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
@@ -103,7 +103,7 @@
             <a href="{% url 'gallery'%}" class="nav-item nav-link">Gallery</a>
             <a href="{% url 'contact'%}" class="nav-item nav-link">Contact</a>
         </div>
-        <a href="{% url 'booking'%}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
+        <a href="{% url 'financing'%}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Financing Available<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
 </nav>
 <!-- Navbar End -->
@@ -122,10 +122,10 @@
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1-530-402-1994</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="{% static '"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100065157355058" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="{% static '"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="{% static '"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -156,7 +156,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="{% static '#">Woodland Tires and Wheels</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="{% url 'index' %}">Woodland Tires and Wheels</a>, All Right Reserved.
 
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                         Designed By <a class="border-bottom" href="https://htmlcodex.com">PG Soft</a>
@@ -178,7 +178,7 @@
 
 
     <!-- Back to Top -->
-    <a href="{% static '#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="{% url 'index' %}" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
